@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "ubuntu", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #01ffd5;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+body {
+    color: white;
+    /* background-image: url(SRC/glowing-edges-hexagonal-texture.jpg); */
+    background-color: #2b2c28;
+}
+
+section {
+    padding: 120px 0;
+    height: auto;
+}
+
+.about, .services, .skills, .contact, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    color: #23b410;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: green;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: #23b410;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.link {
+    display: inline-block;
+    background: none;
+    color: #01ffd5;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 6px;
+    border: 2px solid #01ffd5;
+    transition: all 0.2s ease;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.link:hover {
+    color: white ;
+}
+
+/* Button */
+.btn {
+    background-color: #23b410;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 6px;
+    border: 2px solid #23b410;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: white;
+    background: none;
+}
+
+
+ img{
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px #b2ff9e;
+    transition: all 0.3s ease;
+}
+
+ img:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px #b2ff9e;
+}
+
+
+
+
+.title {
+    color: rgb(0, 200, 255) !important;
+}
+
+.title::before {
+    background-color: rgb(119, 229, 235) !important;
+}
+
+.title::after {
+    /* content: ""; */
+    color: rgb(149, 193, 205) !important;
+}
